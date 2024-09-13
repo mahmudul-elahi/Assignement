@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(243 244 246);
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action {
+    display: flex;
+    gap: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+
+.list-group-item:hover .action {
+    visibility: visible;
+    opacity: 1;
+}
